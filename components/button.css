@@ -1,14 +1,14 @@
 .button {
-    display: flex;
-    font: inherit;
-    cursor: pointer;
-    background: #ec1d24;
-    border: 0px solid #ec1d24;    
-    padding: 0.9rem 0.7rem;
-    align-content: flex-end;
+  display: flex;
+  font: inherit;
+  cursor: pointer;
+  background: #ec1d24;
+  border-radius: 20px;
+  border: 0px;
+  padding: 0.9rem 0.7rem;
+  align-content: flex-end;
 }
 
 .button:active {
-    transform: translateY(1px);
+  transform: translateY(1px);
 }
-
