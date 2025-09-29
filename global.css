@@ -25,8 +25,8 @@ body {
 }
 
 .cards {
-    display: grid;
-    gap: 1rem
+    display: flex;
+    gap: 1rem;
 }
 
 .tag {

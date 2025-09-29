@@ -1,17 +1,19 @@
 .app-nav {
-    display: flex;
-    position: fixed;
-    left: 0; right: 0; bottom: 0; height: 90px;
-    background: #ec1d24;
-    align-items: center;
-    justify-content: space-around;            
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 90px;
+  background: #ec1d24;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .app-nav__link {
-    text-decoration: none;
-    font-size: 1.5rem;
-    opacity: 1;
-    padding: .25rem .5rem;
-    border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  opacity: 1;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
 }
-
