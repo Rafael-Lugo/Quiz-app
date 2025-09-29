@@ -1,6 +1,10 @@
 .app-nav {
+    display: flex;
     position: fixed;
-    left: 0; right: 0; bottom: 0; height: 56px;    
+    left: 0; right: 0; bottom: 0; height: 90px;
+    background: #ec1d24;
+    align-items: center;
+    justify-content: space-around;            
 }
 
 .app-nav__link {
