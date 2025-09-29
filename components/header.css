@@ -1,0 +1,16 @@
+.app-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+    background: #151515;
+    border-bottom: 2px solid #ec1d24;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.app-header__tittle {
+    margin: 0;
+    font-size: 1.25rem;
+}
