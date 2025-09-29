@@ -14,8 +14,10 @@
     <main class="app-main">
         <section class="cards">
             <article class="card">
-                <button class="card__bookmark">
-                     <img src="./assets/icons/Bookmark.svg" alt="Bookmarks">
+                <button class="card__bookmark" aria-pressed="true" title="Bookmarked">
+                    <svg class="card__bookmark-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7 3h10a1 1 0 0 1 1 1v17l-6-3-6 3V4a1 1 0 0 1 1-1z"/>
+                    </svg>
                 </button>
                 <h2 class="card__question">Question 1:</h2>
                 <p>

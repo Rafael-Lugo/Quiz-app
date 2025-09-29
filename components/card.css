@@ -26,15 +26,42 @@
 
 .card__bookmark {
     position: absolute;
-    top: -1rem;
-    right: 0.5rem;
+    top: .5rem;
+    right: .5rem;
+
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
 
     background: transparent;
+    color: #ab0b0b;
     border: none;
-    font-size: 1.5rem;
+    border-radius: 50%;
     cursor: pointer;
+
+    transition: transform .15s ease, color .2s ease, background-color .2s ease;
 }
 
+.card__bookmark--icon {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+}
+
+.card__bookmark:hover {
+  transform: scale(1.08);
+  background:transparent;
+  outline: none;
+}
+
+.card__bookmark[aria-pressed="true"] {
+  color: #d60c13;               
+  background: rgba(164, 11, 16, 0.1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .card__bookmark { transition: none; }
+}
 
 .card__question {
     margin: 0 0 0.5rem;
