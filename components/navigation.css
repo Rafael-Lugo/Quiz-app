@@ -10,6 +10,11 @@
   justify-content: space-around;
 }
 
+.app-nav__icon {
+  width: 52px;
+  height: 52px;
+}
+
 .app-nav__link {
   color: white;
   text-decoration: none;
