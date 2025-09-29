@@ -26,54 +26,46 @@
 
 .card__bookmark {
     position: absolute;
-    top: .5rem;
-    right: .5rem;
-
-    display: grid;
-    place-items: center;
-    width: 40px;
-    height: 40px;
+    top: -1rem;
+    right: -.2rem;
 
     background: transparent;
-    color: #ab0b0b;
+    color: #ec1d24;
     border: none;
-    border-radius: 50%;
     cursor: pointer;
-
-    transition: transform .15s ease, color .2s ease, background-color .2s ease;
+    z-index: 0;
 }
 
-.card__bookmark--icon {
-    width: 22px;
-    height: 22px;
+.card__bookmark-icon {
+    width: 72px;
+    height: 72px;
     fill: currentColor;
 }
 
-.card__bookmark:hover {
+.card__bookmark:hover,
+.card__bookmark:focus-visible {
   transform: scale(1.08);
-  background:transparent;
+  background: transparent;
   outline: none;
 }
 
 .card__bookmark[aria-pressed="true"] {
-  color: #d60c13;               
-  background: rgba(164, 11, 16, 0.1);
-}
-@media (prefers-reduced-motion: reduce) {
-  .card__bookmark { transition: none; }
+  color: #0bdc1f;
+  background: transparent;
+  outline: none;
 }
 
 .card__question {
     margin: 0 0 0.5rem;
     align-self: center;    
 }
-
 .card__answer {
     margin: 0 auto 1rem 0;
     align-items: center;
     font-weight: normal;
-    color: #151515
+    color: #151515;
 }
+
 
 .card__tags {
     display: flex;
