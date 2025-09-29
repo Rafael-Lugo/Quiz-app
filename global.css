@@ -10,8 +10,25 @@ body {
 body {
   margin: 0;
   font-family: Roboto;
-  color: #151515;
-  background: #c7c5c5;
+  color: #151515;  
+}
+
+.app--home {
+  background:
+  linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+  url('./assets/Background/superhero-collage-fvoxfxdq1dqv9e40.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.app--bookmarks {
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('./assets/Background/marvel-ipad-oxalwk0fh7s1xwog.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .app {
