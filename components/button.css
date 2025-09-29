@@ -1,12 +1,11 @@
 .button {
-  display: flex;
-  font: inherit;
-  cursor: pointer;
+  align-self: center;
+  padding: 1rem 6rem;
+  border: none;
+  border-radius: 25px;
   background: #ec1d24;
-  border-radius: 20px;
-  border: 0px;
-  padding: 0.9rem 0.7rem;
-  align-content: flex-end;
+  color: white;
+  cursor: pointer;
 }
 
 .button:active {
