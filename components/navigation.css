@@ -16,11 +16,7 @@
 }
 
 .app-nav__link {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  opacity: 1;
-  padding: 0.25rem 0.5rem;
-  border-radius: 6px;
-  font-weight: bold;
+    filter: brightness(0) invert(1);  
 }
+
+
