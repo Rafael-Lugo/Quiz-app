@@ -13,10 +13,39 @@
     </header>
 
     <main class="app-main__profile">
-        <section class="">
-            <article class="">
-                
-            </article>
+        <section class="profile" aria-labelledby="profile-title">
+            <h2 id="profile-title" class="visually-hidden">Profile</h2>
+
+            <header class="profile__head"> </header>
+                <div class="profile__avatar" aria-hidden="true"></div>
+                <h3 class="profile_name">Max Mustermann</h3>  
+            </header>
+
+            <section class="profile_about">
+                <h4 class="profile__section-title">About me</h4>
+                <p class="profile__text">Short descrption about this MArvelous quiz enjoyer... </p>
+            </section>
+
+            <ul class="profile__stats" aria-label="Stats">
+                <li class="stat">
+                    <span class="stat__label">Question</span>
+                    <strong class="stat__number">12</strong>                    
+                </li>
+                <li class="stat">
+                    <span class="stat__label">Bookmarks</span>
+                    <strong class="stat__number">4</strong>
+                </li>
+            </ul>
+            
+              <section class="profile__settings">
+        <h4 class="profile__section-title">Settings</h4>
+        <label class="switch">
+          <input type="checkbox" disabled />
+          <span class="switch__ui" aria-hidden="true"></span>
+          <span class="switch__label">Dark Mode</span>
+        </label>
+        <p class="profile__hint">*(coming later – not functional yet)*</p>
+      </section>
         </section>
     </main>
     <footer>
