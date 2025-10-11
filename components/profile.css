@@ -5,7 +5,7 @@
   gap: 1rem;
   max-width: 720px;
   margin-inline: auto;
-  color: #fff;
+  color: var(--bg);
 }
 
 .profile__head {
@@ -19,7 +19,7 @@
   height: 150px;
   border-radius: 50%;
   background: #ffffff;
-  border: 2px solid #ec1d24;
+  border: 2px solid var(--ug);
 }
 
 .profile__name {
@@ -37,19 +37,21 @@
 }
 
 .stat {
-  background: #ec1d24;
+  background: var(--ug);
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 25px;
+  gap: 1rem;
 }
 
 .stat__label {
-  color: #1c1c1c;
+  color: var(--bg);
 }
 .stat__number {
   font-size: 1.125rem;
+  ;
 }
 
 .profile__settings {
@@ -60,12 +62,12 @@
 
 .profile__hint {
   margin: 0;
-  color: #474545;
+  color: var(--fg);
   font-size: 0.875rem;
 }
 
 #profile__title {
-  text-shadow: #151515 0px 3px 9px;
+  text-shadow: var(--fg) 0px 3px 9px;
 }
 
 
@@ -91,9 +93,9 @@
   width: 100%;
   padding: .6rem .75rem;
   border-radius: 25px;
-  border: 1px solid #ddd;
-  background: #fff;
-  color: #151515;
+  border: 1px solid var(--fg);
+  background: var(--bg);
+  color: var(--fg);
   font: inherit;
 }
 
@@ -110,25 +112,27 @@
   border: none;
   border-radius: 999px;
   padding: .6rem 1.1rem;
-  background: #ec1d24;
-  color: #fff;
+  background: var(--ug);
+  color: var(--bg);
   cursor: pointer;
 }
 .button--ghost {
-  background: #fff;
-  color: #ec1d24;
-  border: 1px solid #ec1d24;
+  background: var(--bg);
+  color: var(--ug);
+  border: 1px solid var(--ug);
 }
 
 
 .profile__section-title {
   margin: 0 0 .5rem;
   font-weight: 800;
-  color: #ec1d24;
+  color: var(--ug);
 }
 
 .profile__about {
-  border: 2px solid #ec1d24;   /* rojo Marvel */
+  border: 2px solid var(--ug);
   border-radius: 25px;
   padding: 1.5rem;
   margin: 2rem;
+}
+

@@ -6,6 +6,10 @@
     <title>Marvel Universe Quiz</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <script src="./assets/js/global.js" defer></script>
+  <script src="./assets/js/profile.js" defer></script>
+  
+
   <body class="app app--profile">
     <header class="app-header">
       <img
@@ -92,11 +96,10 @@
           <section class="profile__settings">
             <h4 class="profile__section-title">Settings</h4>
             <label class="switch">
-              <input type="checkbox" name="darkMode" data-js="dark-toggle" />
-              <span class="switch__ui" aria-hidden="true"></span>
-              <span class="switch__label">Dark Mode</span>
+                <input type="checkbox" data-js="dark-toggle" />
+                <span class="switch__ui"></span>
+                <span class="switch__label">Dark Mode</span>
             </label>
-            <p class="profile__hint">*(coming later – not functional yet)*</p>
           </section>
 
           <div class="form__actions">
