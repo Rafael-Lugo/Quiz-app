@@ -1,68 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marvel Universe Quiz</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="app app--profile">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="app app--profile">
     <header class="app-header">
-        <img src="./assets/Marvel_Logo.png" alt="Marvel Logo" class="app-header__logo">
-        <h1 class="app-header__title">Universe Quiz</h1>
+      <img
+        src="./assets/Marvel_Logo.png"
+        alt="Marvel Logo"
+        class="app-header__logo"
+      />
+      <h1 class="app-header__title">Universe Quiz</h1>
     </header>
 
     <main class="app-main-profile">
-        <section class="profile" aria-labelledby="profile__title">
-            <h2 id="profile__title" class="visually-hidden">Profile</h2>
+      <section class="profile" aria-labelledby="profile__title">
+        <h2 id="profile__title" class="visually-hidden">Profile</h2>
 
-            <header class="profile__head">
-                <div class="profile__avatar" aria-hidden="true"></div>
-                <h3 class="profile__name">Max Mustermann</h3>  
-            </header>
+        <header class="profile__head">
+          <div class="profile__avatar" aria-hidden="true"></div>
+          <h3 class="profile__name" data-js="name-display">Max Mustermann</h3>
+        </header>
 
-            <section class="profile__about">
-                <h4 class="profile__section-title">About me</h4>
-                <p class="profile__text">Short descrption about this MArvelous quiz enjoyer... </p>
-            </section>
-
-            <ul class="profile__stats" aria-label="Stats">
-                <li class="stat">
-                    <span class="stat__label">Question</span>
-                    <strong class="stat__number">12</strong>                    
-                </li>
-                <li class="stat">
-                    <span class="stat__label">Bookmarks</span>
-                    <strong class="stat__number">4</strong>
-                </li>
-            </ul>
-            
-            <section class="profile__settings">
-                <h4 class="profile__section-title">Settings</h4>
-                <label class="switch">
-                    <input type="checkbox" disabled />
-                    <span class="switch__ui" aria-hidden="true"></span>
-                    <span class="switch__label">Dark Mode</span>
-                </label>
-                <p class="profile__hint">*(coming later – not functional yet)*</p>
-            </section>
+        <section class="profile__about">
+          <h4 class="profile__section-title">About me</h4>
+          <p class="profile__text">
+            Short descrption about this MArvelous quiz enjoyer...
+          </p>
         </section>
+
+        <ul class="profile__stats" aria-label="Stats">
+          <li class="stat">
+            <span class="stat__label">Question</span>
+            <strong class="stat__number">12</strong>
+          </li>
+          <li class="stat">
+            <span class="stat__label">Bookmarks</span>
+            <strong class="stat__number">4</strong>
+          </li>
+        </ul>
+
+        <section class="profile__settings">
+          <h4 class="profile__section-title">Settings</h4>
+          <label class="switch">
+            <input type="checkbox" disabled />
+            <span class="switch__ui" aria-hidden="true"></span>
+            <span class="switch__label">Dark Mode</span>
+          </label>
+          <p class="profile__hint">*(coming later – not functional yet)*</p>
+        </section>
+      </section>
     </main>
-    
+
     <footer>
-        <nav class="app-nav">
-             <a class="app-nav__link app-nav__link--active" href="index.html" aria-current="page">
-                <img src="./assets/icons/Home.svg" alt="Home" class="app-nav__icon">
-            </a>
-            <a class="app-nav__link" href="bookmarks.html">
-                <img src="./assets/icons/Bookmark.svg" alt="Bookmarks" class="app-nav__icon">
-            </a>
-            <a class="app-nav__link" href="profile.html">
-                <img src="./assets/icons/user.svg" alt="Profile" class="app-nav__icon">
-            </a>
-        </nav>
-
+      <nav class="app-nav">
+        <a class="app-nav__link" href="index.html">
+          <img src="./assets/icons/Home.svg" alt="Home" class="app-nav__icon" />
+        </a>
+        <a class="app-nav__link" href="bookmarks.html">
+          <img
+            src="./assets/icons/Bookmark.svg"
+            alt="Bookmarks"
+            class="app-nav__icon"
+          />
+        </a>
+        <a class="app-nav__link app-nav__link--active" href="profile.html">
+          <img
+            src="./assets/icons/user.svg"
+            alt="Profile"
+            class="app-nav__icon"
+            aria-current="page"
+          />
+        </a>
+      </nav>
     </footer>
-
-</body>
+  </body>
 </html>

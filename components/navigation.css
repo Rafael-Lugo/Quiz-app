@@ -8,17 +8,21 @@
   background: #ec1d24;
   align-items: center;
   justify-content: space-around;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.517);
 }
 
 .app-nav__icon {
-  width: 52px;
-  height: 52px;
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(0);
+  transition: filter 0.3s ease;
 }
 
-.app-nav__link {
-    filter: brightness(0) invert(1);
+.app-nav__link--active .app-nav__icon{
+ filter: brightness(0) invert(1);
 }
 
-
-
+.app-nav__link:hover {
+  transform: scale(1.1);
+}
 
