@@ -67,3 +67,68 @@
 #profile__title {
   text-shadow: #151515 0px 3px 9px;
 }
+
+
+.profile-form {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+
+.form__row { display: grid; gap: .35rem; }
+
+.form__row--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .75rem;
+}
+@media (max-width: 480px) {
+  .form__row--grid { grid-template-columns: 1fr; }
+}
+
+.profile-form input,
+.profile-form select {
+  width: 100%;
+  padding: .6rem .75rem;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #151515;
+  font: inherit;
+}
+
+.profile-form select { cursor: pointer; }
+
+.form__actions {
+  display: flex;
+  gap: .75rem;
+  justify-content: center;
+  padding-top: .25rem;
+}
+
+.button {
+  border: none;
+  border-radius: 999px;
+  padding: .6rem 1.1rem;
+  background: #ec1d24;
+  color: #fff;
+  cursor: pointer;
+}
+.button--ghost {
+  background: #fff;
+  color: #ec1d24;
+  border: 1px solid #ec1d24;
+}
+
+
+.profile__section-title {
+  margin: 0 0 .5rem;
+  font-weight: 800;
+  color: #ec1d24;
+}
+
+.profile__about {
+  border: 2px solid #ec1d24;   /* rojo Marvel */
+  border-radius: 25px;
+  padding: 1.5rem;
+  margin: 2rem;

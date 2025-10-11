@@ -25,33 +25,91 @@
           <h3 class="profile__name" data-js="name-display">Max Mustermann</h3>
         </header>
 
-        <section class="profile__about">
-          <h4 class="profile__section-title">About me</h4>
-          <p class="profile__text">
-            Short descrption about this MArvelous quiz enjoyer...
-          </p>
-        </section>
+        <form class="profile-form" data-js="profile-form">
+          <fieldset class="profile__about">
+                <legend class="profile__section-title">About me</legend>
 
-        <ul class="profile__stats" aria-label="Stats">
-          <li class="stat">
-            <span class="stat__label">Question</span>
-            <strong class="stat__number">12</strong>
-          </li>
-          <li class="stat">
-            <span class="stat__label">Bookmarks</span>
-            <strong class="stat__number">4</strong>
-          </li>
-        </ul>
+                <label class="form__row">
+                    <span>Full name</span>
+                    <input
+                        type="text"
+                        name="fullName"
+                        data-js="name-input"
+                        placeholder="Your name"
+                        required
+                    />
+                    </label>
 
-        <section class="profile__settings">
-          <h4 class="profile__section-title">Settings</h4>
-          <label class="switch">
-            <input type="checkbox" disabled />
-            <span class="switch__ui" aria-hidden="true"></span>
-            <span class="switch__label">Dark Mode</span>
-          </label>
-          <p class="profile__hint">*(coming later – not functional yet)*</p>
-        </section>
+                    <div class="form__row form__row--grid">
+                    <label>
+                            <span>Age</span>
+                            <input
+                            type="number"
+                            min="0"
+                            max="120"
+                            step="1"
+                            name="age"
+                            data-js="age-input"
+                            placeholder="e.g. 28"
+                            />
+                    </label>
+
+                    <label>
+                            <span>Birth year</span>
+                            <input
+                            type="number"
+                            min="1900"
+                            max="2100"
+                            step="1"
+                            name="birthYear"
+                            data-js="year-input"
+                            placeholder="e.g. 1997"
+                            />
+                    </label>
+                    </div>
+
+                    <label class="form__row">
+                    <span>Favorite Marvel character</span>
+                    <select
+                        name="favorite"
+                        data-js="favorite-select"
+                        required
+                    ></select>
+                </label>
+          </fieldset>
+
+          <ul class="profile__stats" aria-label="Stats">
+            <li class="stat">
+              <span class="stat__label">Questions</span
+              ><strong class="stat__number">12</strong>
+            </li>
+            <li class="stat">
+              <span class="stat__label">Bookmarks</span
+              ><strong class="stat__number">4</strong>
+            </li>
+          </ul>
+
+          <section class="profile__settings">
+            <h4 class="profile__section-title">Settings</h4>
+            <label class="switch">
+              <input type="checkbox" name="darkMode" data-js="dark-toggle" />
+              <span class="switch__ui" aria-hidden="true"></span>
+              <span class="switch__label">Dark Mode</span>
+            </label>
+            <p class="profile__hint">*(coming later – not functional yet)*</p>
+          </section>
+
+          <div class="form__actions">
+            <button class="button" type="submit">Save profile</button>
+            <button
+              class="button button--ghost"
+              type="reset"
+              data-js="reset-btn"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
       </section>
     </main>
 
