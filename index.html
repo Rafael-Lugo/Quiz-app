@@ -6,6 +6,7 @@
     <title>Marvel Universe Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<script src="./assets/js/global.js" defer></script>
 <body class="app app--home">
     <header class="app-header">
         <img src="./assets/Marvel_Logo.png" alt="Marvel Logo" class="app-header__logo">
@@ -22,9 +23,9 @@
             </button>
                 <h2 class="card__question">1. Question: What is the name of the first Marvel Cinematic Universe film, released in 2008?</h2>
                 <p>
-                    <h3 class="card__answer">Iron Man</h3>
+                    <h3 class="card__answer hidden" data-js="answer" id="answer-1">Iron Man</h3>
                 </p>
-                <button class="button">Show answer</button>
+                <button class="button" data-js="toggle-answer" aria-expanded="false" aria-controls="answer-1">Show answer</button>
             </article>
       
             <article class="card">
@@ -114,9 +115,13 @@
             <a class="app-nav__link" href="bookmarks.html">
                 <img src="./assets/icons/Bookmark.svg" alt="Bookmarks" class="app-nav__icon">
             </a>
+            <a class="app-nav__link" href="form.html">
+                <img src="./assets/icons/file-plus.svg" alt="New card" class="app-nav__icon">
+            </a>
+            </a>
             <a class="app-nav__link" href="profile.html">
                 <img src="./assets/icons/user.svg" alt="Profile" class="app-nav__icon">
-            </a>
+    
         </nav>
 
     </footer>

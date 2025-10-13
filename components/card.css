@@ -1,77 +1,85 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 .cards {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
 }
 
 .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: .75rem;
-    padding: 3rem;
-    justify-content: space-between;
-    
-    background: #ffffff;
-    border: 0px;
-    border-radius: 25px;    
-    min-height: 200px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);    
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 3rem;
+  justify-content: space-between;
+
+  background: var(--card-bg);
+  color: var(--card-fg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 1rem;
+  min-height: 200px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card__bookmark {
-    position: absolute;
-    top: -1rem;
-    right: -.2rem;
+  position: absolute;
+  top: -1rem;
+  right: -0.2rem;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
 
-    background: transparent;
-    color: #ec1d24;
-    border: none;
-    cursor: pointer;
-    z-index: 0;
+  background: transparent;
+  color: var(--ug);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  z-index: 0;
 }
 
 .card__bookmark-icon {
-    width: 72px;
-    height: 72px;
-    fill: currentColor;
+  width: 72px;
+  height: 72px;
+  fill: currentColor;
+  transition: color 0.3s ease;
 }
 
-.card__bookmark:hover,
-.card__bookmark:focus-visible {
+.card__bookmark {
+  color: #bbb; /* Default color */
+}
+
+.card__bookmark:hover {
+  color: var(--ug);
   transform: scale(1.08);
-  background: transparent;
-  outline: none;
 }
 
 .card__bookmark[aria-pressed="true"] {
-  color: #0bdc1f;
-  background: transparent;
-  outline: none;
+  color: var(--ug);
 }
 
 .card__question {
-    margin: 0 0 0.5rem;
-    align-self: center;    
+  margin: 50px 20px 0px 0px;
+  align-self: center;
+  padding: 0px 10px 0 0px;
 }
 .card__answer {
-    margin: 0 auto 1rem 0;
-    align-items: center;
-    font-weight: normal;
-    color: #151515;
+  margin: 0 auto;
+  align-items: center;
+  font-weight: normal;
+  color: var(--fg);
 }
 
-
 .card__tags {
-    display: flex;
-    gap: .5rem;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marvel Universe Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <script src="./assets/js/global.js" defer></script>
+  <body class="app app--home">
+    <header class="app-header">
+      <img
+        src="./assets/Marvel_Logo.png"
+        alt="Marvel Logo"
+        class="app-header__logo"
+      />
+      <h1 class="app-header__title">Universe Quiz</h1>
+    </header>
+
+    <main class="app-main">
+      <form>
+        <label for="Your-question">Your question</label>
+        <input type="text" id="Your-question"/>
+        <label for="Your-answer">Your answer</label>
+        <input type="text" id="Your-answer"/>
+        <label for="Tag">Tag</label>
+        <input type="text" id="Tag"/>
+        <button type="submit">Send</button>
+      </form>
+    </main>
+    <footer>
+      <nav class="app-nav">
+        <a class="app-nav__link" href="index.html">
+          <img src="./assets/icons/Home.svg" alt="Home" class="app-nav__icon" />
+        </a>
+        <a class="app-nav__link app-nav__link--active" href="bookmarks.html">
+          <img
+            src="./assets/icons/Bookmark.svg"
+            alt="Bookmarks"
+            class="app-nav__icon"
+          />
+        </a>
+        <a class="app-nav__link" href="form.html">
+          <img
+            src="./assets/icons/file-plus.svg"
+            alt="New card"
+            class="app-nav__icon"
+            aria-current="page"
+          />
+        </a>
+        <a class="app-nav__link" href="profile.html">
+          <img
+            src="./assets/icons/user.svg"
+            alt="Profile"
+            class="app-nav__icon"
+          />
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>

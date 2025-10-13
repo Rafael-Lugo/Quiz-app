@@ -1,0 +1,138 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 720px;
+  margin-inline: auto;
+  color: var(--bg);
+}
+
+.profile__head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid var(--ug);
+}
+
+.profile__name {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.profile__stats {
+  list-style: none;
+  padding: 0;
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.stat {
+  background: var(--ug);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  gap: 1rem;
+}
+
+.stat__label {
+  color: var(--bg);
+}
+.stat__number {
+  font-size: 1.125rem;
+  ;
+}
+
+.profile__settings {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile__hint {
+  margin: 0;
+  color: var(--fg);
+  font-size: 0.875rem;
+}
+
+#profile__title {
+  text-shadow: var(--fg) 0px 3px 9px;
+}
+
+
+.profile-form {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+
+.form__row { display: grid; gap: .35rem; }
+
+.form__row--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .75rem;
+}
+@media (max-width: 480px) {
+  .form__row--grid { grid-template-columns: 1fr; }
+}
+
+.profile-form input,
+.profile-form select {
+  width: 100%;
+  padding: .6rem .75rem;
+  border-radius: 25px;
+  border: 1px solid var(--fg);
+  background: var(--bg);
+  color: var(--fg);
+  font: inherit;
+}
+
+.profile-form select { cursor: pointer; }
+
+.form__actions {
+  display: flex;
+  gap: .75rem;
+  justify-content: center;
+  padding-top: .25rem;
+}
+
+.button {
+  border: none;
+  border-radius: 999px;
+  padding: .6rem 1.1rem;
+  background: var(--ug);
+  color: var(--bg);
+  cursor: pointer;
+}
+.button--ghost {
+  background: var(--bg);
+  color: var(--ug);
+  border: 1px solid var(--ug);
+}
+
+
+.profile__section-title {
+  margin: 0 0 .5rem;
+  font-weight: 800;
+  color: var(--ug);
+}
+
+.profile__about {
+  border: 2px solid var(--ug);
+  border-radius: 25px;
+  padding: 1.5rem;
+  margin: 2rem;
+}
+
