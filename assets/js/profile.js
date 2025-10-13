@@ -50,12 +50,13 @@
       if (!isNaN(y)) ageInput.value = Math.max(0, Y() - y);
     });
   }
-
+  //dark mode
   function applyDark(on){ document.documentElement.classList.toggle('theme-dark', on); }
   if (darkToggle) {
     darkToggle.addEventListener('change', () => applyDark(darkToggle.checked));
   }
 
+  //form
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -66,7 +67,7 @@
       profileData.darkMode  = !!darkToggle?.checked;
       nameDisp.textContent  = profileData.fullName;
       console.log('✅ Profile saved', profileData);
-      // localStorage.setItem('profileData', JSON.stringify(profileData)); // opcional
+     
     });
 
     form.addEventListener('reset', () => {
