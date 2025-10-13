@@ -108,19 +108,8 @@
   padding-top: .25rem;
 }
 
-.button {
-  border: none;
-  border-radius: 999px;
-  padding: .6rem 1.1rem;
-  background: var(--ug);
-  color: var(--bg);
-  cursor: pointer;
-}
-.button--ghost {
-  background: var(--bg);
-  color: var(--ug);
-  border: 1px solid var(--ug);
-}
+
+
 
 
 .profile__section-title {

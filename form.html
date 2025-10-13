@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marvel Universe Quiz</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href=".components/newcard.css" />
   </head>
   <script src="./assets/js/global.js" defer></script>
   <body class="app app--home">
@@ -18,15 +19,29 @@
     </header>
 
     <main class="app-main">
-      <form>
-        <label for="Your-question">Your question</label>
-        <input type="text" id="Your-question"/>
-        <label for="Your-answer">Your answer</label>
-        <input type="text" id="Your-answer"/>
-        <label for="Tag">Tag</label>
-        <input type="text" id="Tag"/>
-        <button type="submit">Send</button>
-      </form>
+      <fieldset class="question-form">
+        <form class="question-new" data-js="question-new">
+          <label for="Your-question">Your question</label>
+          <input
+            type="text"
+            id="Your-question"
+            placeholder="Write your question here"
+          />
+          <label for="Your-answer">Your answer</label>
+          <input
+            type="text"
+            id="Your-answer"
+            placeholder="Write your answer here"
+          />
+          <label for="Tag">Tag</label>
+          <input
+            type="text"
+            id="Tag"
+            placeholder="Write the tags you think are importan!"
+          />
+          <button class="button" type="submit">Send</button>
+        </form>
+      </fieldset>
     </main>
     <footer>
       <nav class="app-nav">
